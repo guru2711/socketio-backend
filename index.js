@@ -10,7 +10,7 @@ const loginRoute = require("./routes/login")
 const UserModel = require("./models/User")
 const auth = require("./middleware/auth")
  
-app.use(cors());
+
 app.use(express.json())
 connectDB()
 
@@ -18,7 +18,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://socketiochatapp.netlify.app/",
+    origin: "http://socketiochatapp.netlify.app/",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
