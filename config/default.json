@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://Guru:Guru777@cluster0.ke7v2.mongodb.net/ChatApp?retryWrites=true&w=majority",
+    "jwtSecret":"chatapp"
+}
