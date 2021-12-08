@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http");
 const cors = require("cors");
-const { Server } = require("socket.io");
+const Server  = require("socket.io");
 const mongoose = require("mongoose")
 const connectDB = require("./config/db")
 const userRoute = require("./routes/user")
@@ -18,7 +18,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://socketiochatapp.netlify.app/",
+    origin: "http://socketiochatapp.netlify.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
